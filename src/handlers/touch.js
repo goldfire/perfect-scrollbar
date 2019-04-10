@@ -174,7 +174,7 @@ export default function(i) {
     if (i.settings.swipeEasing) {
       clearInterval(easingLoop);
       easingLoop = setInterval(function() {
-        if (i.isInitialized) {
+        if (i.isAlive) {
           clearInterval(easingLoop);
           return;
         }
