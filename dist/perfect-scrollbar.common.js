@@ -1,6 +1,6 @@
 /*!
  * perfect-scrollbar v1.4.0
- * (c) 2018 Hyunje Jun
+ * (c) 2019 Hyunje Jun
  * @license MIT
  */
 'use strict';
@@ -1048,7 +1048,7 @@ var touch = function(i) {
     if (i.settings.swipeEasing) {
       clearInterval(easingLoop);
       easingLoop = setInterval(function() {
-        if (i.isInitialized) {
+        if (i.isAlive) {
           clearInterval(easingLoop);
           return;
         }
